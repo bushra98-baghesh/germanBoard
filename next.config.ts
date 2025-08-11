@@ -2,7 +2,14 @@ import type { NextConfig } from "next";
 
 const nextConfig: NextConfig = {
   images: {
-    domains: ["backend.germanboard.org"], // السماح بجلب الصور من هذا الدومين
+    remotePatterns: [
+      {
+        protocol: "https",
+        hostname: "backend.germanboard.org",
+        port: "",
+        pathname: "/**",
+      },
+    ],
   },
 };
 

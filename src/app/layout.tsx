@@ -14,6 +14,7 @@ const inter = Inter({
 });
 
 export const metadata: Metadata = {
+  metadataBase: new URL("https://germanboard.org"),
   title: "German Board - Consulting and Training",
   description:
     "Professional German language education and consulting services. Expert training programs,and educational consulting for individuals and organizations.",

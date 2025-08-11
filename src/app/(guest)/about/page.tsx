@@ -6,6 +6,7 @@ import { StarsBackground } from "@/components/ui/stars-background";
 import { ShootingStars } from "@/components/ui/shooting-stars";
 import { motion } from "framer-motion";
 import { Award, Shield, Lightbulb } from "lucide-react";
+import Image from "next/image";
 
 const values = [
   {
@@ -118,9 +119,11 @@ export default function AboutPage() {
           {/* Right: Image */}
           <div className="relative flex justify-center items-center">
             <div className="relative w-full  flex items-center justify-center">
-              <img
+              <Image
                 src="/images/AB-3.jpg"
                 alt="German Board training and consulting services"
+                width={600}
+                height={400}
                 className="w-full h-full object-cover rounded-3xl shadow-2xl border border-white/40 dark:border-gray-700/60"
               />
               <div className="absolute inset-0 rounded-3xl bg-gradient-to-t from-black/20 to-transparent" />
@@ -236,9 +239,11 @@ export default function AboutPage() {
           {/* Right: Image */}
           <div className="relative flex justify-center items-center">
             <div className="relative w-full flex items-center justify-center">
-              <img
+              <Image
                 src="/images/AB-2.jpg"
                 alt="German Board professional development and education"
+                width={600}
+                height={400}
                 className="w-full h-full object-cover rounded-3xl shadow-2xl border border-white/40 dark:border-gray-700/60"
               />
               <div className="absolute inset-0 rounded-3xl bg-gradient-to-t from-black/20 to-transparent" />
